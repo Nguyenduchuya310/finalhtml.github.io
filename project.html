@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+body {
+  margin: 0;
+  background-color: #f1f1f1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+p{
+font-family: 'Alatsi', sans-serif;
+    font-size: 100%;
+    color: #555555;
+  }
+
+  #navbar b {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+</style>
+<body>
+
+
+  <div id="navbar">
+  <a href="contact1.html">Contact</a>
+  <a href="project.html">Project</a>
+  <a href="Home2.html">Home</a>
+  <b href="Home2.html">Duc Huy</b>
+</div>
+
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+<br>
+
+
+<!-- Header -->
+<div class="header">
+  <h1>Product Design</h1>
+  <p>2021 Colour Trend</p>
+  <p>100 photos have been collected by <u>Duc Huy</u></p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="/Users/macbook/Downloads/html/pexels-lumn-1410236.jpg" style="width:100%">
+    <img src="/Users/macbook/Downloads/html/pexels-nerfee-mirandilla-3186654.jpg" style="width:100%">
+    <img src="/Users/macbook/Downloads/html/pexels-pixabay-357573.jpg" style="width:100%">
+    <img src="/Users/macbook/Downloads/html/pexels-nastyasensei-821365.jpg" style="width:100%">
+    <img src="/Users/macbook/Downloads/html/pexels-lisa-fotios-1279330.jpg" style="width:100%">
+    <img src="/Users/macbook/Downloads/html/pexels-lisa-fotios-918327.jpg" style="width:100%">
+    <img src="/Users/macbook/Downloads/html/pexels-christel-jensen-628776 (1).jpg" style="width:100%">
+    <img src="/Users/macbook/Downloads/html/pexels-josh-hild-2949140.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="/Users/macbook/Downloads/html/pexels-yurii-hlei-1545743.jpg" style="width:100%">
+    <img src="/Users/macbook/Downloads/html/pexels-maria-tyutina-5596127.jpg" style="width:100%">
+    <img src="/Users/macbook/Downloads/html/pexels-abdulwahab-alawadhi-3440756.jpg" style="width:100%">
+    <img src="/Users/macbook/Downloads/html/pexels-thuany-marcante-1805053.jpg" style="width:100%">
+    <img src="/Users/macbook/Downloads/html/pexels-jae-park-3802510.jpg" style="width:100%">
+    <img src="/Users/macbook/Downloads/html/pexels-giorgio-de-angelis-1191109.jpg" style="width:100%">
+    <img src="/Users/macbook/Downloads/html/pexels-julia-volk-5205652.jpg" style="width:100%">
+    <img src="/Users/macbook/Downloads/html/pexels-oleg-magni-1796085.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="/Users/macbook/Downloads/html/13-1603675116-amj-1.jpg" style="width:100%">
+    <img src="/Users/macbook/Downloads/html/Ngam_nhung_hinh_anh_tuyet_dep_ve_Viet_Nam_tren_bao_Anh_02.jpg" style="width:100%">
+    <img src="/Users/macbook/Downloads/html/pexels-flat-hito-862938.jpg" style="width:100%">
+    <img src="/Users/macbook/Downloads/html/pexels-josh-sorenson-570987.jpg" style="width:100%">
+    <img src="/Users/macbook/Downloads/html/pexels-hong-son-5012442.jpg" style="width:100%">
+    <img src="/Users/macbook/Downloads/html/pexels-david-bartus-586687.jpg" style="width:100%">
+    <img src="/Users/macbook/Downloads/html/pexels-thorsten-technoman-338515.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="/Users/macbook/Downloads/html/pexels-anna-tukhfatullina-food-photographerstylist-2611812.jpg" style="width:100%">
+    <img src="/Users/macbook/Downloads/html/pexels-serena-koi-1576109.jpg" style="width:100%">
+    <img src="/Users/macbook/Downloads/html/pexels-dids-3777285.jpg" style="width:100%">
+    <img src="/Users/macbook/Downloads/html/pexels-karolina-grabowska-4207780.jpg" style="width:100%">
+    <img src="/Users/macbook/Downloads/html/pexels-mariana-332988.jpg" style="width:100%">
+    <img src="/Users/macbook/Downloads/html/pexels-jasper-de-vreede-4263631.jpg" style="width:100%">
+  </div>
+</div>
+
+<script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+}
+</script>
+
+</body>

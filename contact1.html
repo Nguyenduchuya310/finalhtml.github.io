@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+#more {display: none;}
+
+
+body {
+  margin: 0;
+  background-color: #f1f1f1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+p{
+font-family: 'Alatsi', sans-serif;
+    font-size: 100%;
+    color: #555555;
+  }
+
+  #navbar b {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+</style>
+</head>
+<body>
+
+
+<div id="navbar">
+  <a href="contact1.html">Contact</a>
+  <a href="product.html">Project</a>
+  <a href="porfolio1.html">Home</a>
+  <b href="porfolio1.html">Duc Huy</b>
+</div>
+
+<section>
+<div class="container">
+<img src="/Users/macbook/Downloads/html/pexels-abdulwahab-alawadhi-3440756.jpg" style="width:100%">
+
+<h1 align="center"><u>About Me</u></h1>
+<p>Tình yêu, hay ái tình, là một loạt các cảm xúc, trạng thái tâm lý, và thái độ khác nhau dao động từ tình cảm cá nhân đến niềm vui sướng. Tình yêu thường là một cảm xúc thu hút mạnh mẽ và nhu cầu muốn được ràng buộc gắn bó. <span id="dots">...</span><span id="more">Nó cũng có thể là một đức tính đại diện cho lòng tốt của con người, sự nhân từ, và sự thông cảm mối quan tâm trung thành và vị tha hướng tới người khác. Nó cũng có thể mô tả các hành động nhân văn và thông cảm đối với người khác, chính bản thân mình hoặc các con vật. Người Hy Lạp cổ đại xác định bốn hình thức của tình yêu: Quan hệ gần gũi của họ hàng hay người thân, tình bạn, ham muốn tình dục hoặc cảm xúc lãng mạn, và xúc cảm dành cho các giá trị tôn giáo. Các tác giả hiện đại đã phân biệt các biến thể chi tiết hơn nữa của tình yêu lãng mạn. Các nền văn hóa không phải của phương Tây cũng có các biến thể khác nhau cho các trạng thái cảm xúc này. Sự đa dạng của việc sử dụng và ý nghĩa kết hợp với sự phức tạp của những cảm giác của tình yêu làm cho việc thống nhất xác định thế nào là tình yêu trở nên cực kỳ khó khăn khi so với các trạng thái cảm xúc khác.</span></p>
+<button type="button" class="btn btn-dark" onclick="myFunction()" id="myBtn">Read more</button>
+</div>
+</section>
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+<script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+}
+</script>
+  
+
+
+</body>
+</html>
